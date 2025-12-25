@@ -11,6 +11,10 @@
     height: 70vh;
     width: 90vh;
 }
+.maincenterbox{
+    width:176vh;
+    
+}
 
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
