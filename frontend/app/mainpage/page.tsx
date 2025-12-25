@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "@/components/navbar"
 import Mainbox from "@/components/mainbox"
 import PlusSign from "@/components/plusSign"
+import Link from 'next/link'
 const page = () => {
   return (
     <div className="absolute w-full min-h-full bg-[url('/backmain.jpg')] bg-cover bg-center bg-no-repeat">
@@ -19,7 +20,7 @@ const page = () => {
 
       {/* Grid */}
       <div className="p-10 mt-10 ml-20 grid grid-cols-3 gap-6">
-        <Mainbox />
+        <Link href="/userprojectpage"><Mainbox /></Link>
         <Mainbox />
         <Mainbox />
         <Mainbox />
@@ -33,7 +34,7 @@ const page = () => {
         <Mainbox />
       </div>
       <div className="fixed bottom-6 left-11/12 z-50">
-       <PlusSign/>
+       <Link href="/createprojectpage"><PlusSign/></Link>
       </div>
 
     </div>
